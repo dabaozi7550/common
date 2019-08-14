@@ -1,0 +1,488 @@
+//label default start
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #000;
+    -webkit-tap-highlight-color: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none
+}
+
+strong {
+    font-weight: 700;
+    color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+img {
+    border: 0
+}
+
+a {
+    display: block;
+    text-decoration: none
+}
+
+//label default end
+//@media start moible
+@media only screen and (max-width:640px) {
+
+    body,
+    html {
+        font-size: 25px
+    }
+}
+
+@media only screen and (max-width:540px) {
+
+    body,
+    html {
+        font-size: 22.5px
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+    body,
+    html {
+        font-size: 18.5px
+    }
+}
+
+@media only screen and (max-width:400px) {
+
+    body,
+    html {
+        font-size: 16.5px
+    }
+}
+
+@media only screen and (max-width:360px) {
+
+    body,
+    html {
+        font-size: 15px
+    }
+}
+
+@media only screen and (max-width:320px) {
+
+    body,
+    html {
+        font-size: 14px
+    }
+}
+
+@media only screen and (max-width:240px) {
+
+    body,
+    html {
+        font-size: 13.5px
+    }
+}
+
+//@media end
+//margin start
+.m0a {
+    margin: 0 auto;
+}
+
+.ma {
+    margin: auto;
+}
+
+//for循环 margin-top
+@for $i from 1 through 100 {
+    .mt#{$i} {
+        margin-top:#{$i}px;
+    }
+}
+
+//for循环 margin-bottom
+@for $i from 1 through 100 {
+    .mb#{$i} {
+        margin-bottom:#{$i}px;
+    }
+}
+
+//for循环 margin-left
+@for $i from 1 through 100 {
+    .ml#{$i} {
+        margin-left:#{$i}px;
+    }
+}
+
+//for循环 margin-right
+@for $i from 1 through 100 {
+    .mr#{$i} {
+        margin-right:#{$i}px;
+    }
+}
+
+//margin end
+//padding start
+.p0 {
+    padding: 0px;
+}
+
+//for循环 padding-top
+@for $i from 1 through 100 {
+    .pt#{$i} {
+        padding-top:#{$i}px;
+    }
+}
+
+//for循环 padding-bottom
+@for $i from 1 through 100 {
+    .pb#{$i} {
+        padding-bottom:#{$i}px;
+    }
+}
+
+//for循环 padding-left
+@for $i from 1 through 100 {
+    .pl#{$i} {
+        padding-left:#{$i}px;
+    }
+}
+
+//for循环 padding-top
+@for $i from 1 through 100 {
+    .pr#{$i} {
+        padding-right:#{$i}px;
+    }
+}
+
+//padding end
+//position start
+.pos_b {
+    position: absolute;
+}
+
+.pos_r {
+    position: relative;
+}
+
+//for循环 top
+@for $i from 1 through 100 {
+    .t#{$i} {
+        top:#{$i}px;
+    }
+}
+
+//for循环 bottom
+@for $i from 1 through 100 {
+    .b#{$i} {
+        bottom:#{$i}px;
+    }
+}
+
+//for循环 left
+@for $i from 1 through 100 {
+    .l#{$i} {
+        left:#{$i}px;
+    }
+}
+
+//for循环 right
+@for $i from 1 through 100 {
+    .r#{$i} {
+        right:#{$i}px;
+    }
+}
+
+//position end
+//width start
+//for循环 width
+@for $i from 1 through 100 {
+    .w#{$i} {
+        width:#{$i}px;
+    }
+}
+
+//width end
+//height start
+//for循环 width
+@for $i from 1 through 100 {
+    .h#{$i} {
+        height:#{$i}px;
+    }
+}
+
+//height end
+//flex start
+%flex {
+    display: flex;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex0 {
+    flex: 0;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex_com {
+    @extend %flex;
+    flex-flow: column nowrap;
+}
+
+.flex_row {
+    @extend %flex;
+    flex-flow: row nowrap;
+}
+
+.flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//flex end
+// other
+.fill {
+    width: 100%;
+    height: 100%;
+}
+
+.w_all {
+    width: 100%;
+}
+
+.h_all {
+    height: 100%;
+}
+
+.back_fill {
+    background-size: 100% 100% !important;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.border_box {
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.inline_block {
+    display: inline-block;
+}
+
+.inline_block {
+    display: inline-block;
+}
+
+.vis_show {
+    visibility: visible
+}
+
+.scroll_x {
+    overflow-x: auto;
+}
+
+.scroll_y {
+    overflow-y: auto;
+}
+
+.scroll_hidden {
+    overflow: hidden;
+}
+
+.ellipsis_1 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ellipsis_2 {
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+}
+
+.pos_center_all {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.pos_center_row {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pos_center_col {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+$color:#409eff;
+$font_color:#ffffff;
+$height:100px;
+$width:100px;
+
+.is_active {
+    background-color: $color !important;
+    color: $font_color !important;
+}
+
+//each循环遍历
+
+$i:0;
+$border_color:green;
+
+@each $item in c1,
+c2,
+c3,
+c4 {
+    $i: $i+1;
+
+    .#{$item} {
+        border:#{$i}px solid $border_color;
+    }
+}
