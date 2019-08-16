@@ -332,6 +332,13 @@ a {
 }
 
 //height end
+//font start
+@for $i from 1 through 50 {
+    .font#{$i} {
+        font-size:#{$i}px;
+    }
+}
+//font end
 //flex start
 %flex {
     display: flex;
@@ -366,6 +373,7 @@ a {
 }
 
 //flex end
+
 // other
 .fill {
     width: 100%;
