@@ -316,7 +316,7 @@ a {
 //position end
 //width start
 //for循环 width
-@for $i from 1 through 100 {
+@for $i from 1 through 200 {
     .w#{$i} {
         width:#{$i}px;
     }
@@ -325,7 +325,7 @@ a {
 //width end
 //height start
 //for循环 width
-@for $i from 1 through 100 {
+@for $i from 1 through 200 {
     .h#{$i} {
         height:#{$i}px;
     }
@@ -338,7 +338,16 @@ a {
         font-size:#{$i}px;
     }
 }
+
 //font end
+//border start
+@for $i from 1 through 50 {
+    .b_r#{$i} {
+        border-radius:#{$i}px;
+    }
+}
+
+//border end
 //flex start
 %flex {
     display: flex;
@@ -438,14 +447,40 @@ a {
     white-space: nowrap;
 }
 
-.ellipsis_2 {
-    word-break: break-all;
-    text-overflow: ellipsis;
+@for $i from 2 through 5 {
+    .ellipsis_#{$i} {
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: #{$i};
+        overflow: hidden;
+    }
+}
+
+
+.ml_ellipsis {
     display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
     overflow: hidden;
-    text-overflow: -o-ellipsis-lastline;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+}
+
+.mls_ellipsis {
+    overflow: hidden;
+    position: relative;
+    max-height: 90px;
+
+    &::after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding-left: 40px;
+        background: linear-gradient(to right, transparent, #fff 50%);
+        content: "...";
+    }
 }
 
 .pos_center_all {
@@ -477,6 +512,33 @@ $width:100px;
 .is_active {
     background-color: $color !important;
     color: $font_color !important;
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    span {
+        background-color: $color !important;
+        color: $font_color !important;
+    }
+}
+
+.is_color {
+    color: $color !important;
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    span {
+        color: $color !important;
+    }
 }
 
 //each循环遍历
